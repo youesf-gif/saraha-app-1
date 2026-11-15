@@ -10,3 +10,16 @@ export function toMS(time, unit) {
             return time * 1000;
     }
 }
+
+export function toSeconds(time, unit) {
+    switch (unit) {
+        case "m":
+            return time * 60;
+        case "h":
+            return time * 60 * 60;
+        case "d":
+            return time * 24 * 60 * 60;
+        case "s":
+            return time * 1000;
+    }
+}
